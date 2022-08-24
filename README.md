@@ -20,7 +20,7 @@ After download, extract it.
 <?php
 require_once("./src/Pdf2Txt.php");
 $pdf2Txt = new Pdf2Txt("path/to/file.pdf", [
-  "pdftotxt_path" => "poppler/bin/pdftotext.exe" //Here goes the location of your binary,
+  "pdftotxt_path" => "poppler/bin/pdftotext.exe", //Here goes the location of your binary
   "pdfinfo_path" => "poppler/bin/pdfinfo.exe"
 ]);
 $txt = $pdf2Txt->getTxt();
